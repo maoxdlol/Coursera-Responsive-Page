@@ -21,13 +21,16 @@ h1 {
 }
 
 #mainhead { 
-    background-color: aqua;
+    background-color: rgb(224, 165, 165);
     text-align: center; 
     padding: 3px;
     display: inline-block;
-    border-color: purple;
-    border: 10px;
+    border-color: rgb(118, 180, 151);
+    border: 3px;
     border-style:solid;
+    font-family: 'Aclonica';
+    color: rgb(16, 13, 19);
+    font-size: 40px;
 }
 
 h1 {text-align: center;}
@@ -54,11 +57,12 @@ h1 {text-align: center;}
     clear: right;
     margin:5px;
     text-align:center;
+    float: none;
 
 }
 
 article.contents {
-    background-color: turquoise;
+    background-color: rgb(137, 178, 216);
     border: 3px;
     border-color: black;
     border-style:solid;
@@ -70,9 +74,35 @@ article.wrapper {
     padding: 4px;
 }
 
-
-desc {
+.swappingimage {
     display:inline-block;
-    
+    height: 200px;
+    width: 300px;
+    background-position: center top; 
+    background-image:url(images/chicken.jpg);
+    background-repeat:no-repeat;
+    background-size: contain;
 }
-    
+.chicken {
+    background-image:url(images/chicken.jpg);
+}
+
+.chicken:hover {
+    background-image: url(images/cartoon-chicken.jpg);
+}
+
+.cow {
+    background-image:url(images/beef.jpg);
+}
+
+.cow:hover {
+    background-image: url(images/cartoon-cow.jpg);
+}
+
+.lamb {
+    background-image:url(images/lamb.jpg);
+}
+
+.lamb:hover {
+    background-image: url(images/cartoon-lamb.jpg);
+}
