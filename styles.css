@@ -1,9 +1,15 @@
-.row {width:100%;}
-
 * {box-sizing: border-box;}
+
+/*RESPONSIVE MEDIA QUERIES*/
+
+.overall {
+    width:100%;
+    background-color: honeydew;
+}
 
 @media (min-width:992px){
     article.wrapper {width:33%;}
+    
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -15,9 +21,13 @@
     article.wrapper {width:100%}
 }
 
+/*HEADER*/
+
 h1 {
     background-image: url(images/flowers.jpg);
     background-repeat: repeat-x;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #mainhead { 
@@ -33,7 +43,11 @@ h1 {
     font-size: 40px;
 }
 
-h1 {text-align: center;}
+/*RECIPE BOXES*/
+
+#maincontent {
+    clear:left;
+}
 
 .boxhead {
     float: right; 
@@ -69,17 +83,21 @@ article.contents {
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
+.wrapper {
+    float:left;
+}
+
 article.wrapper {
-    float: left;
     padding: 4px;
 }
+
+/*IMAGE TOGGLE BUTTONS*/
 
 .swappingimage {
     display:inline-block;
     height: 200px;
     width: 300px;
     background-position: center top; 
-    background-image:url(images/chicken.jpg);
     background-repeat:no-repeat;
     background-size: contain;
 }
@@ -106,3 +124,62 @@ article.wrapper {
 .lamb:hover {
     background-image: url(images/cartoon-lamb.jpg);
 }
+
+/*TOOLBAR*/
+
+a {
+    text-decoration: none; /*remove underline from hyperlink, apply DIRECTLY to a element*/
+}
+
+div.wrapper {
+    width: 25%;    
+    position: relative;   
+}
+
+div.toolbar {
+    text-align: center;
+    border-color: black;
+    border-radius: 4px;
+    border-style: solid;
+    background-color: royalblue;
+    text-decoration: none;
+    color: goldenrod;
+    font-family: 'Aclonica';
+    padding:4px;
+    font-size:20px;
+    position: relative;
+    
+}
+
+div.toolbar:hover {
+    background-color: salmon;
+}
+
+
+.wrapper:hover .dropdown-items {
+    display: block;
+}
+
+.dropdown-items {
+    position: absolute;
+    text-align:center;
+    background-color: whitesmoke;
+    display: none;
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+.dropdown-items a {
+    display:block;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px;
+    border-color: grey;
+    border-style: solid;
+    
+}
+
+
+
