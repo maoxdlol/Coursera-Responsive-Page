@@ -45,8 +45,9 @@ h1 {
 
 /*RECIPE BOXES*/
 
-#maincontent {
+.maincontent {
     clear:left;
+    padding-top: 20px;
 }
 
 .boxhead {
@@ -169,6 +170,7 @@ div.toolbar:hover {
     font-family: "Comic Sans MS", cursive, serif;
     font-weight: 500;
     width: 100%;
+    z-index: 1;
 }
 
 .dropdown-items a {
